@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "TVING ID 로그인"
+        label.text = "TVING ID 로그인 "
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 24)
         label.textAlignment = .center
@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
 
     private let idTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "아이디"
+        textField.placeholder = "아이디 "
         textField.layer.borderWidth = 1
         textField.layer.cornerRadius = 5
         textField.layer.borderColor = UIColor.lightGray.cgColor
