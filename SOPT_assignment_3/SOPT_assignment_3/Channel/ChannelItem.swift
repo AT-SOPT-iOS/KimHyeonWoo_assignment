@@ -1,4 +1,7 @@
-struct ChannelItem {
+import Foundation
+
+struct ChannelItem: Identifiable {
+    let id = UUID()
     let logoName: String
 }
 

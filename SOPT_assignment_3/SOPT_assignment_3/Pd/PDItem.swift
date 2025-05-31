@@ -1,4 +1,7 @@
-struct PDItem {
+import Foundation
+
+struct PDItem: Identifiable{
+    let id = UUID()
     let imageName: String
 }
 

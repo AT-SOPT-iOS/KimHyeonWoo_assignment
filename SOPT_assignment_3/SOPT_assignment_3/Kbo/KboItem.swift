@@ -1,5 +1,8 @@
-struct KboItem {
-    let logoName: String  // ex. "bears", "tigers", ...
+import Foundation
+
+struct KboItem: Identifiable {
+    let id = UUID()
+    let logoName: String
 }
 
 struct KboModel {

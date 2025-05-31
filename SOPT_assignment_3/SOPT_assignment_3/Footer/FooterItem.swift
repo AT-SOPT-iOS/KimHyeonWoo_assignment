@@ -1,6 +1,7 @@
 import Foundation
 
-struct FooterItem {
+struct FooterItem: Identifiable {
+    let id = UUID()
     let badge: String
     let message: String
     let arrowImageName: String

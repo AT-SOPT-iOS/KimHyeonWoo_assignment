@@ -1,4 +1,7 @@
-struct MovieItem {
+import Foundation
+
+struct MovieItem: Identifiable {
+    let id = UUID()
     let imageName: String
 }
 
