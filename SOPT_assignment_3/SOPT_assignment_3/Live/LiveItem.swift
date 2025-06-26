@@ -1,4 +1,7 @@
-struct LiveItem {
+import Foundation
+
+struct LiveItem: Identifiable {
+    let id = UUID()
     let title: String
     let episode: String
     let percent: String

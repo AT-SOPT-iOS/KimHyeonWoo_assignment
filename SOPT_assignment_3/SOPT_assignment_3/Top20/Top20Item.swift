@@ -1,4 +1,7 @@
-struct Top20Item {
+import Foundation
+
+struct Top20Item: Identifiable {
+    let id = UUID()
     let title: String
     let imageName: String
 }

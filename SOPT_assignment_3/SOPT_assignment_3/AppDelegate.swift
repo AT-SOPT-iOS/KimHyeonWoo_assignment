@@ -3,20 +3,27 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // 윈도우 객체 생성
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-        // 첫 번째 화면으로 LoginViewController를 설정
-        let loginViewController = HomeViewController()
-        let navigationController = UINavigationController(rootViewController: loginViewController)
-        
-        // 네비게이션 컨트롤러를 루트 뷰 컨트롤러로 설정
-        self.window?.rootViewController = navigationController
-        self.window?.makeKeyAndVisible()
-
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
         return true
+    }
+
+    // MARK: UISceneSession Lifecycle (iOS 13+)
+    func application(
+        _ application: UIApplication,
+        configurationForConnecting connectingSceneSession: UISceneSession,
+        options: UIScene.ConnectionOptions
+    ) -> UISceneConfiguration {
+
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+
+    func application(
+        _ application: UIApplication,
+        didDiscardSceneSessions sceneSessions: Set<UISceneSession>
+    ) {
     }
 }

@@ -1,4 +1,7 @@
-struct MenuItem {
+import Foundation
+
+struct MenuItem: Identifiable {
+    let id = UUID()
     let title: String
 }
 
